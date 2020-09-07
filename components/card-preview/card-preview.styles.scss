@@ -1,0 +1,122 @@
+.card {
+  flex: 0 0 35rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-basis: 35rem;
+  }
+
+  @media only screen and (max-width: 360px) {
+    flex-basis: 30rem;
+  }
+
+  // filter: drop-shadow(21px -20px 0px rgba(silver, 0.6));
+  &__container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &__image-bg {
+    max-width: 100%;
+    height: 350px;
+
+    @media only screen and (max-width: 1024px) {
+      height: 450px;
+    }
+  }
+
+  &__btn-icon {
+    transform: rotate(180deg);
+    width: 1.4rem;
+    height: 2.4rem;
+    fill: #fff;
+    margin-left: 2rem;
+  }
+
+  &__preview {
+    position: relative;
+    border: 2px solid #fff;
+  }
+
+  &__info {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  &__image-bg {
+    // transform: scale(1.2);
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    filter: brightness(0.6);
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  &__meta {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+  }
+  &__about {
+    position: absolute;
+    margin-left: 0.5rem;
+    left: 100%;
+    width: 100%;
+    top: 70%;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    width: 100%;
+    display: block;
+    margin-bottom: 0.4rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+  }
+
+  &__desc {
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 3.5rem;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+
+  color: #fff;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background: darken($color: #eee, $amount: 10);
+  }
+}
+
+.btn-title {
+  font-size: 1.6rem;
+  transform: skewX(-10deg);
+  font-weight: 600;
+
+  color: currentColor;
+}
